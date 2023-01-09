@@ -18,6 +18,12 @@
 		8720B09A296B9FD800D44F4A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8720B099296B9FD800D44F4A /* FirebaseAnalytics */; };
 		8720B09C296B9FD800D44F4A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8720B09B296B9FD800D44F4A /* FirebaseAuth */; };
 		8720B09E296B9FD800D44F4A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8720B09D296B9FD800D44F4A /* FirebaseFirestore */; };
+		8720B0AA296BA78A00D44F4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720B0A9296BA78A00D44F4A /* AppDelegate.swift */; };
+		8720B0AC296BA8BA00D44F4A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8720B0AB296BA8BA00D44F4A /* GoogleService-Info.plist */; };
+		8720B0AD296BA92A00D44F4A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8720B0AB296BA8BA00D44F4A /* GoogleService-Info.plist */; };
+		8720B0B1296BA96400D44F4A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8720B0B0296BA96400D44F4A /* FirebaseAnalytics */; };
+		8720B0B3296BA96700D44F4A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8720B0B2296BA96700D44F4A /* FirebaseAuth */; };
+		8720B0B5296BA96B00D44F4A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8720B0B4296BA96B00D44F4A /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,8 @@
 		8720B082296B9E5A00D44F4A /* QuickDeleteChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickDeleteChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8720B086296B9E5A00D44F4A /* QuickDeleteChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickDeleteChatUITests.swift; sourceTree = "<group>"; };
 		8720B088296B9E5A00D44F4A /* QuickDeleteChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickDeleteChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8720B0A9296BA78A00D44F4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8720B0AB296BA8BA00D44F4A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8720B0B1296BA96400D44F4A /* FirebaseAnalytics in Frameworks */,
+				8720B0B5296BA96B00D44F4A /* FirebaseFirestore in Frameworks */,
+				8720B0B3296BA96700D44F4A /* FirebaseAuth in Frameworks */,
 				8720B097296B9F4100D44F4A /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +97,7 @@
 				8720B07B296B9E5A00D44F4A /* QuickDeleteChatTests */,
 				8720B085296B9E5A00D44F4A /* QuickDeleteChatUITests */,
 				8720B069296B9E5900D44F4A /* Products */,
+				8720B0AF296BA96400D44F4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				8720B06B296B9E5900D44F4A /* QuickDeleteChatApp.swift */,
+				8720B0A9296BA78A00D44F4A /* AppDelegate.swift */,
+				8720B0AB296BA8BA00D44F4A /* GoogleService-Info.plist */,
 				8720B0A8296BA74100D44F4A /* Models */,
 				8720B0A7296BA73B00D44F4A /* View */,
 				8720B0A6296BA73000D44F4A /* ViewModel */,
@@ -159,6 +173,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		8720B0AF296BA96400D44F4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -200,6 +221,9 @@
 			name = QuickDeleteChatTests;
 			packageProductDependencies = (
 				8720B096296B9F4100D44F4A /* ViewInspector */,
+				8720B0B0296BA96400D44F4A /* FirebaseAnalytics */,
+				8720B0B2296BA96700D44F4A /* FirebaseAuth */,
+				8720B0B4296BA96B00D44F4A /* FirebaseFirestore */,
 			);
 			productName = QuickDeleteChatTests;
 			productReference = 8720B078296B9E5A00D44F4A /* QuickDeleteChatTests.xctest */;
@@ -277,6 +301,7 @@
 			files = (
 				8720B073296B9E5A00D44F4A /* Preview Assets.xcassets in Resources */,
 				8720B070296B9E5A00D44F4A /* Assets.xcassets in Resources */,
+				8720B0AC296BA8BA00D44F4A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8720B0AD296BA92A00D44F4A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8720B0AA296BA78A00D44F4A /* AppDelegate.swift in Sources */,
 				8720B06E296B9E5900D44F4A /* ContentView.swift in Sources */,
 				8720B06C296B9E5900D44F4A /* QuickDeleteChatApp.swift in Sources */,
 			);
@@ -664,6 +691,21 @@
 			productName = FirebaseAuth;
 		};
 		8720B09D296B9FD800D44F4A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8720B098296B9FD800D44F4A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		8720B0B0296BA96400D44F4A /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8720B098296B9FD800D44F4A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		8720B0B2296BA96700D44F4A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8720B098296B9FD800D44F4A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		8720B0B4296BA96B00D44F4A /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8720B098296B9FD800D44F4A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
