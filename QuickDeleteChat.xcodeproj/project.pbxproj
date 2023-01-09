@@ -103,7 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				8720B06B296B9E5900D44F4A /* QuickDeleteChatApp.swift */,
-				8720B06D296B9E5900D44F4A /* ContentView.swift */,
+				8720B0A8296BA74100D44F4A /* Models */,
+				8720B0A7296BA73B00D44F4A /* View */,
+				8720B0A6296BA73000D44F4A /* ViewModel */,
 				8720B06F296B9E5A00D44F4A /* Assets.xcassets */,
 				8720B071296B9E5A00D44F4A /* Preview Content */,
 			);
@@ -133,6 +135,28 @@
 				8720B088296B9E5A00D44F4A /* QuickDeleteChatUITestsLaunchTests.swift */,
 			);
 			path = QuickDeleteChatUITests;
+			sourceTree = "<group>";
+		};
+		8720B0A6296BA73000D44F4A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8720B0A7296BA73B00D44F4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8720B06D296B9E5900D44F4A /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8720B0A8296BA74100D44F4A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
