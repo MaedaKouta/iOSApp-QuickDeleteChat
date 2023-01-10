@@ -11,7 +11,7 @@
 		8720B06E296B9E5900D44F4A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720B06D296B9E5900D44F4A /* LoginView.swift */; };
 		8720B070296B9E5A00D44F4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8720B06F296B9E5A00D44F4A /* Assets.xcassets */; };
 		8720B073296B9E5A00D44F4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8720B072296B9E5A00D44F4A /* Preview Assets.xcassets */; };
-		8720B07D296B9E5A00D44F4A /* QuickDeleteChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720B07C296B9E5A00D44F4A /* QuickDeleteChatTests.swift */; };
+		8720B07D296B9E5A00D44F4A /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720B07C296B9E5A00D44F4A /* LoginTests.swift */; };
 		8720B087296B9E5A00D44F4A /* QuickDeleteChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720B086296B9E5A00D44F4A /* QuickDeleteChatUITests.swift */; };
 		8720B089296B9E5A00D44F4A /* QuickDeleteChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720B088296B9E5A00D44F4A /* QuickDeleteChatUITestsLaunchTests.swift */; };
 		8720B097296B9F4100D44F4A /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 8720B096296B9F4100D44F4A /* ViewInspector */; };
@@ -25,6 +25,7 @@
 		8720B0B3296BA96700D44F4A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8720B0B2296BA96700D44F4A /* FirebaseAuth */; };
 		8720B0B5296BA96B00D44F4A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8720B0B4296BA96B00D44F4A /* FirebaseFirestore */; };
 		8720B0B7296CE79E00D44F4A /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720B0B6296CE79E00D44F4A /* AuthManager.swift */; };
+		8720B0BA296CE8DE00D44F4A /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720B0B9296CE8DE00D44F4A /* SecondView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,13 +52,14 @@
 		8720B06F296B9E5A00D44F4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8720B072296B9E5A00D44F4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8720B078296B9E5A00D44F4A /* QuickDeleteChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickDeleteChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8720B07C296B9E5A00D44F4A /* QuickDeleteChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickDeleteChatTests.swift; sourceTree = "<group>"; };
+		8720B07C296B9E5A00D44F4A /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
 		8720B082296B9E5A00D44F4A /* QuickDeleteChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickDeleteChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8720B086296B9E5A00D44F4A /* QuickDeleteChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickDeleteChatUITests.swift; sourceTree = "<group>"; };
 		8720B088296B9E5A00D44F4A /* QuickDeleteChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickDeleteChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8720B0A9296BA78A00D44F4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8720B0AB296BA8BA00D44F4A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8720B0B6296CE79E00D44F4A /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthManager.swift; path = QuickDeleteChat/Models/AuthManager.swift; sourceTree = SOURCE_ROOT; };
+		8720B0B9296CE8DE00D44F4A /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +140,7 @@
 		8720B07B296B9E5A00D44F4A /* QuickDeleteChatTests */ = {
 			isa = PBXGroup;
 			children = (
-				8720B07C296B9E5A00D44F4A /* QuickDeleteChatTests.swift */,
+				8720B07C296B9E5A00D44F4A /* LoginTests.swift */,
 			);
 			path = QuickDeleteChatTests;
 			sourceTree = "<group>";
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				8720B06D296B9E5900D44F4A /* LoginView.swift */,
+				8720B0B9296CE8DE00D44F4A /* SecondView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8720B0AA296BA78A00D44F4A /* AppDelegate.swift in Sources */,
+				8720B0BA296CE8DE00D44F4A /* SecondView.swift in Sources */,
 				8720B0B7296CE79E00D44F4A /* AuthManager.swift in Sources */,
 				8720B06E296B9E5900D44F4A /* LoginView.swift in Sources */,
 				8720B06C296B9E5900D44F4A /* QuickDeleteChatApp.swift in Sources */,
@@ -333,7 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8720B07D296B9E5A00D44F4A /* QuickDeleteChatTests.swift in Sources */,
+				8720B07D296B9E5A00D44F4A /* LoginTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

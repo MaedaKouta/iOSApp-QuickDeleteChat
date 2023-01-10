@@ -27,16 +27,16 @@ struct LoginView: View {
         Button(action: {
 
             authManager.Login(email: name, password: password, complition: { isSuccess in
+                isSecondView = isSuccess
                 print("認証状況：", isSuccess)
             })
         }) {
             Text("画面遷移Present").fontWeight(.bold).font(.largeTitle)
         }
-//        .sheet(isPresented: self.$isSecondView) {
-//            // trueになれば下からふわっと表示
-//            //SecondView()
-//            print("ok")
-//        }
+        .sheet(isPresented: self.$isSecondView) {
+            // trueになれば下からふわっと表示
+            SecondView()
+        }
     }
 }
 
