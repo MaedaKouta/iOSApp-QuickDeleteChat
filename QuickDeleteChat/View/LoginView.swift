@@ -26,9 +26,9 @@ struct LoginView: View {
 
         Button(action: {
 
-            authManager.Login(email: name, password: password, complition: { isSuccess in
+            authManager.Login(email: name, password: password, complition: { isSuccess, message in
                 isSecondView = isSuccess
-                print("認証状況：", isSuccess)
+                print("認証状況：", isSuccess, message)
             })
         }) {
             Text("画面遷移Present").fontWeight(.bold).font(.largeTitle)

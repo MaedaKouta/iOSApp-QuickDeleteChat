@@ -10,23 +10,24 @@ import FirebaseAuth
 
 class AuthManager {
 
-    //static let shared = AuthManager()
+    static let shared = AuthManager()
     let auth = Auth.auth()
     var errMessage: String = ""
 
     // MARK: - ログインwith email/password
-    func Login(email:String, password:String, complition: @escaping (Bool) -> Void ) {
+    func Login(email:String, password:String, complition: @escaping (Bool, String) -> Void ) {
         auth.signIn(withEmail: email, password: password) { result, error in
             if error == nil {
                 if result?.user != nil{
-                    complition(true)
+                    complition(true, "ログイン成功")
                 }else{
-                    complition(false)
+                    complition(false, "不明なエラー")
                 }
             }else{
                 self.setErrorMessage(error)
                 print(self.errMessage)
-                complition(false)
+                complition(false, self.errMessage)
+                //complition(self.errMessage)
             }
         }
     }
