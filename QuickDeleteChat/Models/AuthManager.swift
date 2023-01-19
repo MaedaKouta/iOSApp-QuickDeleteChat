@@ -7,49 +7,56 @@
 
 import Foundation
 import FirebaseAuth
+import Firebase
+import FirebaseFirestore
 
 class AuthManager {
 
-    static let shared = AuthManager()
-    let auth = Auth.auth()
-    var errMessage: String = ""
+    private static let shared = AuthManager()
+    private let auth = Auth.auth()
+    private var errMessage: String = ""
 
-    // MARK: - ログインwith email/password
+    // MARK: - ログイン with email/password
     func login(email:String, password:String, complition: @escaping (Bool, String) -> Void ) {
         auth.signIn(withEmail: email, password: password) { result, error in
             if error == nil {
-                if result?.user != nil{
+                if result?.user != nil {
                     complition(true, "ログイン成功")
-                }else{
+                } else {
                     complition(false, "不明なエラー")
                 }
-            }else{
+            } else {
                 self.setErrorMessage(error)
                 print(self.errMessage)
                 complition(false, self.errMessage)
-                //complition(self.errMessage)
             }
         }
     }
+
      // MARK: - 新規登録
-//    func createUser(email:String,password:String,name:String,complition: @escaping (Bool) -> Void ) {
-//        Auth.auth().createUser(withEmail: email, password: password) { result, error in
-//            if error == nil {
-//                if let user = result?.user {
-//                    self.editUserInfo(user: user, name: name) { result in
-//                        complition(result)
-//                    }
-//                }else{
-//                    complition(false)
-//                }
-//            }else{
-//                self.setErrorMessage(error)
-//                complition(false)
-//            }
-//        }
-//    }
-//
-    func setErrorMessage(_ error:Error?){
+    func createUser(email: String, password: String, name: String, complition: @escaping (Bool, String) -> Void ) {
+
+        let trimmingName = name.trimmingCharacters(in: .whitespacesAndNewlines)
+        if trimmingName.isEmpty {
+            complition(false, "名前が空白です")
+            return
+        }
+
+        auth.createUser(withEmail: email, password: password) { result, error in
+            if error == nil {
+                if result?.user != nil {
+                    complition(true, "アカウント登録成功")
+                } else {
+                    complition(false, "不明なエラー")
+                }
+            } else {
+                self.setErrorMessage(error)
+                complition(false, self.errMessage)
+            }
+        }
+    }
+
+    private func setErrorMessage(_ error:Error?){
         if let error = error as NSError? {
             if let errorCode = AuthErrorCode.Code(rawValue: error.code) {
                 switch errorCode {
