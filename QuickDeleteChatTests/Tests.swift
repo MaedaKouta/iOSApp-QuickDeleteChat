@@ -1,14 +1,14 @@
 //
-//  QuickDeleteChatTests.swift
+//  Tests.swift
 //  QuickDeleteChatTests
 //
-//  Created by 前田航汰 on 2023/01/09.
+//  Created by 前田航汰 on 2023/01/10.
 //
 
 import XCTest
 @testable import QuickDeleteChat
 
-final class QuickDeleteChatTests: XCTestCase {
+final class Tests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
