@@ -10,7 +10,7 @@ import FirebaseAuth
 
 class AuthManager {
 
-    static let shared = AuthManager()
+    //static let shared = AuthManager()
     let auth = Auth.auth()
     var errMessage: String = ""
 

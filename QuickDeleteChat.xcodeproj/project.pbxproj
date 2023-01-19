@@ -27,6 +27,11 @@
 		8720B0B7296CE79E00D44F4A /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720B0B6296CE79E00D44F4A /* AuthManager.swift */; };
 		8720B0BA296CE8DE00D44F4A /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720B0B9296CE8DE00D44F4A /* SecondView.swift */; };
 		8720B0BB296CEA9E00D44F4A /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720B0B6296CE79E00D44F4A /* AuthManager.swift */; };
+		874186F2296D2C17009915AB /* QuickDeleteChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720B06B296B9E5900D44F4A /* QuickDeleteChatApp.swift */; };
+		874186F3296D2C19009915AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720B0A9296BA78A00D44F4A /* AppDelegate.swift */; };
+		874186F4296D2C2A009915AB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720B06D296B9E5900D44F4A /* LoginView.swift */; };
+		874186F5296D2C2D009915AB /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720B0B9296CE8DE00D44F4A /* SecondView.swift */; };
+		87A676A8296D1FB900390FDE /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A676A7296D1FB900390FDE /* Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +66,8 @@
 		8720B0AB296BA8BA00D44F4A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8720B0B6296CE79E00D44F4A /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthManager.swift; path = QuickDeleteChat/Models/AuthManager.swift; sourceTree = SOURCE_ROOT; };
 		8720B0B9296CE8DE00D44F4A /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		874186F6296D43E2009915AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		87A676A7296D1FB900390FDE /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +126,7 @@
 		8720B06A296B9E5900D44F4A /* QuickDeleteChat */ = {
 			isa = PBXGroup;
 			children = (
+				874186F6296D43E2009915AB /* Info.plist */,
 				8720B06B296B9E5900D44F4A /* QuickDeleteChatApp.swift */,
 				8720B0A9296BA78A00D44F4A /* AppDelegate.swift */,
 				8720B0AB296BA8BA00D44F4A /* GoogleService-Info.plist */,
@@ -142,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				8720B07C296B9E5A00D44F4A /* LoginTests.swift */,
+				87A676A7296D1FB900390FDE /* Tests.swift */,
 			);
 			path = QuickDeleteChatTests;
 			sourceTree = "<group>";
@@ -338,7 +347,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				874186F5296D2C2D009915AB /* SecondView.swift in Sources */,
+				874186F4296D2C2A009915AB /* LoginView.swift in Sources */,
+				874186F2296D2C17009915AB /* QuickDeleteChatApp.swift in Sources */,
+				87A676A8296D1FB900390FDE /* Tests.swift in Sources */,
 				8720B07D296B9E5A00D44F4A /* LoginTests.swift in Sources */,
+				874186F3296D2C19009915AB /* AppDelegate.swift in Sources */,
 				8720B0BB296CEA9E00D44F4A /* AuthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,7 +507,7 @@
 				DEVELOPMENT_TEAM = 558ZJSQN67;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = QuickDeleteChat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -522,7 +536,7 @@
 				DEVELOPMENT_TEAM = 558ZJSQN67;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = QuickDeleteChat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -553,6 +567,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.tetoblog.QuickDeleteChatTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -573,6 +590,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.tetoblog.QuickDeleteChatTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -591,6 +611,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.tetoblog.QuickDeleteChatUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -609,6 +632,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.tetoblog.QuickDeleteChatUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

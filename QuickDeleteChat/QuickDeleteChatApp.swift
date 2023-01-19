@@ -17,4 +17,5 @@ struct QuickDeleteChatApp: App {
             LoginView()
         }
     }
+
 }
