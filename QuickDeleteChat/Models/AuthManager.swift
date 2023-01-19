@@ -15,7 +15,7 @@ class AuthManager {
     var errMessage: String = ""
 
     // MARK: - ログインwith email/password
-    func Login(email:String, password:String, complition: @escaping (Bool, String) -> Void ) {
+    func login(email:String, password:String, complition: @escaping (Bool, String) -> Void ) {
         auth.signIn(withEmail: email, password: password) { result, error in
             if error == nil {
                 if result?.user != nil{

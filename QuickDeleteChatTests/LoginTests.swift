@@ -30,7 +30,7 @@ final class LoginTests: XCTestCase {
         let password = "000000"
         var isSuccess = Bool()
 
-        authManager.Login(email: mailAdress, password: password, complition: { isLoginSuccess in
+        authManager.login(email: mailAdress, password: password, complition: { isLoginSuccess, message in
             isSuccess = isLoginSuccess
             expect.fulfill()
         })
@@ -51,7 +51,7 @@ final class LoginTests: XCTestCase {
         let password = "111111"
         var isSuccess = Bool()
 
-        authManager.Login(email: mailAdress, password: password, complition: { isLoginSuccess in
+        authManager.login(email: mailAdress, password: password, complition: { isLoginSuccess, message in
             isSuccess = isLoginSuccess
             expect.fulfill()
         })
@@ -72,7 +72,7 @@ final class LoginTests: XCTestCase {
         let password = "000000"
         var isSuccess = Bool()
 
-        authManager.Login(email: mailAdress, password: password, complition: { isLoginSuccess in
+        authManager.login(email: mailAdress, password: password, complition: { isLoginSuccess, message in
             isSuccess = isLoginSuccess
             expect.fulfill()
         })
@@ -93,7 +93,7 @@ final class LoginTests: XCTestCase {
         let password = "111111"
         var isSuccess = Bool()
 
-        authManager.Login(email: mailAdress, password: password, complition: { isLoginSuccess in
+        authManager.login(email: mailAdress, password: password, complition: { isLoginSuccess, message in
             isSuccess = isLoginSuccess
             expect.fulfill()
         })

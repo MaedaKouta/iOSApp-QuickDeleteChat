@@ -26,7 +26,7 @@ struct LoginView: View {
 
         Button(action: {
 
-            authManager.Login(email: name, password: password, complition: { isSuccess, message in
+            authManager.login(email: name, password: password, complition: { isSuccess, message in
                 isSecondView = isSuccess
                 print("認証状況：", isSuccess, message)
             })
