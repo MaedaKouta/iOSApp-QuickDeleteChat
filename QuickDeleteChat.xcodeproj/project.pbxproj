@@ -33,6 +33,7 @@
 		874186F5296D2C2D009915AB /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720B0B9296CE8DE00D44F4A /* SecondView.swift */; };
 		87A676A8296D1FB900390FDE /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A676A7296D1FB900390FDE /* Tests.swift */; };
 		87D9DE63297904120078E70A /* CreateUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D9DE62297904120078E70A /* CreateUserTests.swift */; };
+		87D9DE6529790EDF0078E70A /* CreateUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D9DE6429790EDF0078E70A /* CreateUserView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		874186F6296D43E2009915AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		87A676A7296D1FB900390FDE /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		87D9DE62297904120078E70A /* CreateUserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserTests.swift; sourceTree = "<group>"; };
+		87D9DE6429790EDF0078E70A /* CreateUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				8720B06D296B9E5900D44F4A /* LoginView.swift */,
+				87D9DE6429790EDF0078E70A /* CreateUserView.swift */,
 				8720B0B9296CE8DE00D44F4A /* SecondView.swift */,
 			);
 			path = View;
@@ -339,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8720B0AA296BA78A00D44F4A /* AppDelegate.swift in Sources */,
+				87D9DE6529790EDF0078E70A /* CreateUserView.swift in Sources */,
 				8720B0BA296CE8DE00D44F4A /* SecondView.swift in Sources */,
 				8720B0B7296CE79E00D44F4A /* AuthManager.swift in Sources */,
 				8720B06E296B9E5900D44F4A /* LoginView.swift in Sources */,

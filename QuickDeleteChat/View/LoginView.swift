@@ -11,7 +11,7 @@ import SwiftUI
 import FirebaseAuth
 
 struct LoginView: View {
-    @State var name = ""
+    @State var mailAdress = ""
     @State var password = ""
     @State private var isSecondView: Bool = false
     let authManager = AuthManager()
@@ -19,14 +19,14 @@ struct LoginView: View {
     var body: some View {
         VStack {
             Text("ログイン")
-            TextField("名前", text: $name)
+            TextField("名前", text: $mailAdress)
             TextField("パスワード", text: $password)
         }
         .padding()
 
         Button(action: {
 
-            authManager.login(email: name, password: password, complition: { isSuccess, message in
+            authManager.login(email: mailAdress, password: password, complition: { isSuccess, message in
                 isSecondView = isSuccess
                 print("認証状況：", isSuccess, message)
             })
